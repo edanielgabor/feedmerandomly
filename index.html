@@ -6,18 +6,7 @@
   <link rel="stylesheet" href="main.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <title>Feed Me Randomly</title>
-  <script>
-    const restaurant = ["Westy", "PadThai", "Peti's Döner", "Kebap Ház", "Fei-Fei Kínai", "Chili's Burger", "Arizona", "Bolero"];
-    const getRandomNumber = (max) => Math.floor(Math.random() * max);
-    const getRandomName = () => 
-      `${restaurant[getRandomNumber(restaurant.length)]}`;
-    const setRandomName = () => {
-      document.getElementById('randomFood').innerText = getRandomName();
-    }
-    document.getElementById('generate')
-      .addEventListener('click', setRandomName);
-    setRandomName();
-  </script>
+  <script src="main.js"></script>
 </head>
 <body>
   <div>
