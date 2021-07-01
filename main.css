@@ -9,7 +9,7 @@
 ul.topnav {
   list-style-type: none;
   overflow: hidden;
-  background-color: rgba(0, 45, 125, 0.5);
+  background-image: linear-gradient(to right, rgba(0, 45, 125, 0.8), rgba(0, 45, 125, 0));
   position: fixed;
   top: 0;
   width: 100%;
@@ -24,15 +24,20 @@ ul.topnav li a {
   padding: 20px 20px;
   text-align: center;
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 li a:hover:not(.active) {
-  background-color: rgba(0, 28, 255, 0.1);
+  background-color: rgba(0, 28, 255, 0.05);
+}
+
+li a:hover {
+  transform: scale(1.025);
+  transition: all 0.2s ease-in-out;
 }
 
 .active {
-  background-color: rgba(50, 50, 50, 0.5);
+  background-color: rgba(50, 50, 50, 0.4);
 }
 
 
@@ -49,18 +54,44 @@ li a:hover:not(.active) {
   justify-content: center left;
   align-items: center;
   height: 100vh;
+  width: 100%;
 }
 
 .column {
   margin: 5%;
+  position: relative;
+  top: 30px;
+  text-align: left;
 }
 
 .genBtn {
   width: 75px;
   height: 75px;
+  margin: 10% 0%;
   border-radius: 37.5px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.genBtn:hover {
+  transform: scale(1.025);
+  transition: all 0.2s ease-in-out;
 }
 
 #randomFood {
-  margin: 2rem 0;
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 20px 0px;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 10px 10px;
+  font-size: 0.5rem;
 }
