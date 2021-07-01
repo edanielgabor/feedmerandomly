@@ -5,6 +5,6 @@ const getRandomName = () =>
 const setRandomName = () => {
   document.getElementById('randomFood').innerText = getRandomName();
 }
-document.getElementById('generate')
+document.getElementById('genBtn')
   .addEventListener('click', setRandomName);
 setRandomName();
