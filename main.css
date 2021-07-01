@@ -1,97 +1,145 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 100%;
-  font-family: "Verdana";
-}
-
-ul.topnav {
-  list-style-type: none;
-  overflow: hidden;
-  background-image: linear-gradient(to right, rgba(0, 45, 125, 0.8), rgba(0, 45, 125, 0));
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-ul.topnav li {
-  float: left;
-}
-
-ul.topnav li a {
-  display: block;
-  padding: 20px 20px;
-  text-align: center;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-li a:hover:not(.active) {
-  background-color: rgba(0, 28, 255, 0.05);
-}
-
-li a:hover {
-  transform: scale(1.025);
-  transition: all 0.2s ease-in-out;
-}
-
-.active {
-  background-color: rgba(50, 50, 50, 0.4);
-}
-
-.block {
-  background: url('https://images.unsplash.com/photo-1494859802809-d069c3b71a8a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center left;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-}
-
-.column {
-  margin: 5%;
-  position: relative;
-  top: 30px;
-  text-align: left;
-}
-
-.genBtn {
-  width: 75px;
-  height: 75px;
-  margin: 10% 0%;
-  border-radius: 37.5px;
-  border: none;
-  color: white;
-  background-color: black;
-}
-
-.genBtn:hover {
-  transform: scale(1.025);
-  transition: all 0.2s ease-in-out;
-}
-
-#randomFood {
-  font-size: 1.25rem;
-}
-
-h1 {
-  font-size: 2rem;
-  padding: 20px 0px;
-}
-
-#footer {
-  position: fixed;
-  bottom: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  font-size: 0.5rem;
-}
-
-@media screen and (max-width: 600px) {
-  ul.topnav li {
-    float: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
   }
-}
+  
+  ul.topnav {
+    list-style-type: none;
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 45, 125, 0));
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  ul.topnav li {
+    float: left;
+  }
+  
+  ul.topnav li a {
+    display: block;
+    padding: 18px 18px;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  li a:hover {
+    transform: scale(1.025);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .active {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .block {
+    background: url('asstes/meal.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .container {
+    width: 300px;
+    height: 475px;
+    position: absolute;
+    top: 200px;
+    left: 10%;
+  }
+  
+  #column {
+    width: 300px;
+    height: 275px;
+    text-align: center;
+  }
+  
+  #answer {
+    width: 300px;
+    height: 125px;
+    text-align: center;
+  }
+  
+  #genBtn {
+    width: 75px;
+    height: 75px;
+    border-radius: 37.5px;
+    margin: 30px 0px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    background-color: black;
+    position: relative;
+    left: 112.5px;
+  }
+  
+  #logBtn {
+    width: 150px;
+    height: 75px;
+    border-radius: 37.5px;
+    margin: 30px 0px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    background-color: black;
+    position: relative;
+    left: 75px;
+  }
+
+  #genBtn:hover {
+    transform: scale(1.025);
+    transition: all 0.2s ease-in-out;
+  }
+
+  #logBtn:hover {
+    transform: scale(1.025);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #randomFood {
+    font-size: 25px;
+    font-weight: 700;
+    color: tomato;
+  }
+
+  #comment {
+    text-align: center;
+  }
+  
+  #footer {
+    width: 95%;
+    position: absolute;
+    bottom: 2.5%;
+    left: 2.5%;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  
+  h1 {
+    font-size: 73px;
+  }
+  
+  h2 {
+    font-size: 57px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+  }
+  
+  h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    padding-top: 30px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li {
+      float: none;
+    }
+  }
