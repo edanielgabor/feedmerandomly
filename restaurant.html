@@ -16,8 +16,10 @@
 <body>
   <div>
     <ul class="topnav">
-      <li><a href="index.html">Log in</a></li>
+      <li><a href="home.html">Home</a></li>
       <li><a class="active" href="restaurant.html">Restaurants</a></li>
+      <li><a href="barlist.html">BAR-list</a></li>
+      <li style="float: right"><a href="index.html">Log out</a></li>
     </ul>
   </div>
   <div class="block">
@@ -28,15 +30,16 @@
         <h3>It's time to decide <br> what to have for lunch!</h3>
       </div>
       <div>
-        <button id="logBtn">Log in</button>
+        <button id="genBtn"><i class="fa fa-2x fa-cutlery" aria-hidden="true"></i></button>
       </div>
-      <div id="comment">
-        <div>You have to be logged in to use the application.</div>
+      <div id="answer">
+        <div id="randomFood"></div>
       </div>
     </div>
   </div>
   <div id="footer">
     <p>© 2021 edanielgabor. All rights reserved. This website is for entertainment purposes only and can be used by friends.</p>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
